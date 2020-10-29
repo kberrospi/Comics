@@ -1,0 +1,127 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #CDD1DA;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+button, h1{
+    padding: 10px;
+}
+
+span{
+    color: #FFC107;
+}
+
+img{
+    height: 500px;
+    width: 720px;
+}
+
+.star{
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comic{
+    width: 70%;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px #999;
+}
+.comic-title{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.comic-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    
+}
+
+.comic-rating{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 70px;
+}
+
+.other-comic{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row!important;
+}
+
+.coment-rating{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.btn-comic{
+    --background: #275efe;
+    --text: #fff;
+    --font-size: 16px;
+    --duration: 0.5s;
+    --move-hover: -4px;
+    --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+    --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+    padding: 16px 32px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: var(--font-size);
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: var(--font-size);
+    letter-spacing: 0.5px;
+    background: var(--background);
+    color: var(--text);
+    box-shadow: var(--shadow);
+    -webkit-transform: translateY(var(--y));
+            transform: translateY(var(--y));
+    -webkit-transition: box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+    transition: box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+  }
+  
+  .btn-comic:hover {
+    --y: var(--move-hover);
+    --shadow: var(--shadow-hover);
+    --move: -4px;
+    --shadow-active: 0 3px 1px rgba(0, 0, 0, 0.2);
+  }
